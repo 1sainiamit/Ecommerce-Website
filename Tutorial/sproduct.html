@@ -31,10 +31,10 @@
 
     <section id="prodetails" class="section-p1">
       <div class="single-pro-image">
-        <img src="/images/singleproimage.jpg" width="100%" id="MainImage" alt="">
+        <img src="/images/pro1.jpg" width="100%" id="MainImage" alt="">
         <div class="small-img-group">
           <div class="small-img-col">
-            <img src="/images/singleproimage.jpg" width="100%" class="small-img" alt="">
+            <img src="/images/pro1.jpg" width="100%" class="small-img" alt="">
           </div>
           <div class="small-img-col">
             <img src="/images/singleproimage1.jpg" width="100%" class="small-img" alt="">
@@ -47,8 +47,75 @@
           </div>
         </div>
       </div>
-      <div class="single-pro-details"></div>
+      <div class="single-pro-details">
+        <h6>Home/ T-Shirt</h6>
+        <h4>Regular Fit T-shirt</h4>
+        <h2>₹799</h2>
+        <select>
+          <option>Select Size</option>
+          <option>XS</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+        <input type="number" value="1">
+        <button class="normal">Add To Cart</button>
+        <h4>Product Details</h4>
+        <span>Regular-fit jacket in cotton canvas with a corduroy collar, zip down the front, long sleeves, and a slit and an adjustable press-stud at the cuffs. Flap chest and front pockets with concealed press-studs, and an inner pocket with a press-stud. Quilted lining.</span>
+      </div>
     </section>
+
+
+    <section id="product1" class="section-p1">
+      <h2>Featured Products</h2>
+      <p>Summer Collection New Modern Design</p>
+      <div class="pro-container">
+        <div class="pro">
+          <img src="/images/pro9.jpg" alt="">
+          <div class="des">
+            <span>ZARA</span>
+            <h5>Relaxed Fit Long Sleeve T-shirt</h5>
+            <h4>₹2590</h4>
+          </div>
+          <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+        </div>
+        
+        <div class="pro">
+          <img src="/images/pro10.jpg" alt="">
+          <div class="des">
+            <span>ZARA</span>
+            <h5>Utility Cargo Jeans</h5>
+            <h4>₹5599</h4>
+          </div>
+          <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+        </div>
+        
+        <div class="pro">
+          <img src="/images/pro11.jpg" alt="">
+          <div class="des">
+            <span>ZARA</span>
+            <h5>Letter Print T-shirt</h5>
+            <h4>₹2990</h4>
+          </div>
+          <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+        </div>
+        
+        <div class="pro">
+          <img src="/images/pro12.jpg" alt="">
+          <div class="des">
+            <span>ZARA</span>
+            <h5>Utility Cargo Jeans</h5>
+            <h4>₹4490</h4>
+          </div>
+          <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+        </div>
+
+      </div>
+    </section>
+
+
+
 
 
 
@@ -118,6 +185,25 @@
       </div>
 
     </footer>
+
+    <script>
+      var MainImage = document.getElementById("MainImage");
+      var SmallImage = document.getElementsByClassName("small-img");
+
+      SmallImage[0].onclick = function(){
+        MainImage.src = SmallImage[0].src;
+      }
+      SmallImage[1].onclick = function(){
+        MainImage.src = SmallImage[1].src;
+      }
+      SmallImage[2].onclick = function(){
+        MainImage.src = SmallImage[2].src;
+      }
+      SmallImage[3].onclick = function(){
+        MainImage.src = SmallImage[3].src;
+      }
+
+    </script>
 
     <script src="/script.js"></script>
 </body>
